@@ -10,19 +10,20 @@ for first_loop_var in range(99, 1, -1):
     mod_int1 = first_loop_var % 10
     #This variable will be the second digit each iteration
     mod_int2 = first_loop_var // 10
-
+    #Their sum
     mod_sum = mod_int1 + mod_int2
-
     if mod_sum ** 2 == first_loop_var and first_loop_var != 1:
-        print(first_loop_var)
+        print("!",first_loop_var)
 
-#Here is the double loop that cycles through all numbers from 1 to 100, checks if they are divisible and if so adds to the divisors counter. 
-for numerator in range(1, 100):
+    #To make sure second loop starts with dividers as 0
     divisors = 0 
 
-    for denominator in range(1, numerator+1):
-        if numerator % denominator == 0:
-            divisors +=1
-            
+    #Second loop to iterate through each denominator 
+    for denominator in range(1, first_loop_var + 1):
+        if first_loop_var % denominator == 0:
+            divisors += 1
     if divisors == 10:
-        print(numerator)
+        print("*",first_loop_var)
+        
+            
+
