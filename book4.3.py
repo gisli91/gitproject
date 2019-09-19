@@ -9,3 +9,5 @@ print("Say what? {}".format(a_int))
 print(chr(b_str))
 
 print(chr(17))
+
+print("x"+'\u00B2')

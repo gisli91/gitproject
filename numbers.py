@@ -26,3 +26,5 @@ for numerator in range(1, 100):
             
     if divisors == 10:
         print(numerator)
+
+    

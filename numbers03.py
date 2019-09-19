@@ -24,6 +24,5 @@ for first_loop_var in range(99, 1, -1):
             divisors += 1
     if divisors == 10:
         print("*",first_loop_var)
-        
-            
+
 
